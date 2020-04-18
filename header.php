@@ -69,7 +69,13 @@
 					</ul>
 				</div>
 			</nav>
+			<div class="jumbotron pt-6">
+				<h1 class="display-4"><span>visit</span> Faroe Islands</h1>
+				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+				<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			</div>
 		</div>
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
