@@ -29,7 +29,7 @@
 		<div class="container-fluid">		
 			<nav class="navbar navbar-expand-md navbar-light ">
 				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav ml-auto">
 					<?php
 							wp_nav_menu( array(
 								'theme_location'    => 'menu-2',
@@ -52,7 +52,7 @@
 					</button>
 				</div>
 				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav mr-auto">
 					<?php
 							wp_nav_menu( array(
 								'theme_location'    => 'menu-1',
@@ -75,17 +75,3 @@
 	<div id="content" class="site-content">
 
 
-
-			<?php
-                wp_nav_menu( array(
-                    'theme_location'    => 'menu-1',
-                    'menu_id'           => 'primary-menu',
-                    'depth'             => 2,
-                    'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
-                    'container_id'      => 'bs-example-navbar-collapse-1',
-                    'menu_class'        => 'nav navbar-nav',
-                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker'            => new WP_Bootstrap_Navwalker(),
-                ) );
-            ?>
