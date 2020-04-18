@@ -15,16 +15,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'marup' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'marup' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'marup' ), 'marup', '<a href="http://underscores.me/">Henning Huth</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'marup' ), 'Mårup', '<a href="https://henninghuth.com">Henning Huth</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
