@@ -26,10 +26,10 @@
 	<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'marup' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="container-fluid">		
+		<div class="container">		
 			<nav class="navbar navbar-expand-md navbar-light ">
 				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav mr-auto">
 					<?php
 							wp_nav_menu( array(
 								'theme_location'    => 'menu-2',
@@ -52,7 +52,7 @@
 					</button>
 				</div>
 				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav ml-auto">
 					<?php
 							wp_nav_menu( array(
 								'theme_location'    => 'menu-1',
