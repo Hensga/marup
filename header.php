@@ -72,8 +72,9 @@
 			</nav>
 			<?php if ( is_front_page() ) : ?>
 				<div class="jumbotron">
-					<h1 class="display-4 text-white"><span>visit</span> Faroe Islands</h1>
-					<p class="lead text-white">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+					<h1 class="text-white display-1 text-right"><span>visit</span> <span class="text-uppercase">Faroe</span></h1>
+					<h1 class="text-white display-1 text-uppercase text-right">islands</h1>
+					<p class="text-white text-right font-weight-bold">Unspoiled, Unexplored, Unbelievable.</p>
 					<a class="btn btn-primary btn-lg text-white" href="#" role="button">Learn more</a>
 				</div>
 			<?php endif;?>
