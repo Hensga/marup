@@ -75,7 +75,7 @@
 					<h1 class="text-white display-1 text-right"><span>visit</span> <span class="text-uppercase">Faroe</span></h1>
 					<h1 class="text-white display-1 text-uppercase text-right">islands</h1>
 					<p class="text-white text-right font-weight-bold">Unspoiled, Unexplored, Unbelievable.</p>
-					<a class="btn btn-primary btn-lg text-white" href="#" role="button">Learn more</a>
+					<a class="btn btn-primary btn-lg text-white float-right" href="#" role="button">Learn more</a>
 				</div>
 			<?php endif;?>
 		</div>
