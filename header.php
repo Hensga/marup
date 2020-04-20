@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -71,9 +72,9 @@
 			</nav>
 			<?php if ( is_front_page() ) : ?>
 				<div class="jumbotron">
-					<h1 class="display-4"><span>visit</span> Faroe Islands</h1>
-					<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+					<h1 class="display-4 text-white"><span>visit</span> Faroe Islands</h1>
+					<p class="lead text-white">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+					<a class="btn btn-primary btn-lg text-white" href="#" role="button">Learn more</a>
 				</div>
 			<?php endif;?>
 		</div>
