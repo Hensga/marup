@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer container">
 		<div class="site-info">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
