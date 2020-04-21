@@ -37,7 +37,7 @@
 								'menu_id'           => 'primary-menu',
 								'depth'             => 2,
 								'container'         => 'div',
-								'container_class'   => 'collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2',
+								'container_class'   => 'collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2 text-uppercase font-weight-bold',
 								'container_id'      => 'bs-example-navbar-collapse-1',
 								'menu_class'        => 'nav navbar-nav',
 								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -60,7 +60,7 @@
 								'menu_id'           => 'primary-menu',
 								'depth'             => 2,
 								'container'         => 'div',
-								'container_class'   => 'collapse navbar-collapse w-100 order-3 dual-collapse2',
+								'container_class'   => 'collapse navbar-collapse w-100 order-3 dual-collapse2 text-uppercase font-weight-bold',
 								'container_id'      => 'bs-example-navbar-collapse-1',
 								'menu_class'        => 'nav navbar-nav',
 								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -72,7 +72,7 @@
 			</nav>
 			<?php if ( is_front_page() ) : ?>
 				<div class="jumbotron">
-					<h1 class="text-white display-1 text-right"><span>visit</span> <span class="text-uppercase">Faroe</span></h1>
+					<h1 class="text-white display-1 text-right"><span class="font-italic">visit</span> <span class="text-uppercase">Faroe</span></h1>
 					<h1 class="text-white display-1 text-uppercase text-right">islands</h1>
 					<p class="text-white text-right font-weight-bold">Unspoiled, Unexplored, Unbelievable.</p>
 					<a class="btn btn-primary btn-lg text-white float-right" href="#" role="button">Learn more</a>
