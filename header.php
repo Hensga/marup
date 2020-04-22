@@ -72,10 +72,10 @@
 			</nav>
 			<?php if ( is_front_page() ) : ?>
 				<div class="jumbotron">
-					<h1 class="text-white display-1 text-right"><span class="font-italic">visit</span> <span class="text-uppercase">Faroe</span></h1>
+					<h1 class="text-white display-1 text-right"><span class="font-italic">visit</span> <a href="http://localhost:3000/wordpress-development/history/"><span class="text-uppercase headline-has-animation">Faroe</span></a></h1>
 					<h1 class="text-white display-1 text-uppercase text-right">islands</h1>
 					<p class="text-white text-right font-weight-bold">Unspoiled, Unexplored, Unbelievable.</p>
-					<a class="btn btn-primary btn-lg text-white float-right" href="#" role="button">Learn more</a>
+					
 				</div>
 			<?php endif;?>
 		</div>

@@ -47,13 +47,27 @@ if ( ! function_exists( 'marup_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in two location.
+		// This theme uses wp_nav_menu() in four location.
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Right', 'marup' ),
 				'menu-2' => esc_html__( 'Left', 'marup' ),
+				'menu-3' => esc_html__( 'Footer-Left', 'marup' ),
+				'menu-4' => esc_html__( 'Footer-Right', 'marup' ),
 			)
 		);
+
+
+		/*
+		 * Adding the function to get all the <li> elements in the footer menu
+		 * and generating the footer-nav-list class.
+		 */
+		function add_classes_on_li($classes, $item, $args) {
+		$classes[] = 'footer-nav-list';
+		return $classes;
+		}
+		add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -148,6 +162,7 @@ function marup_scripts() {
 	wp_style_add_data( 'marup-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'marup-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'marup-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js', '20151215', true );
 	wp_enqueue_script( 'marup-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'marup-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), '20151215', true );
 

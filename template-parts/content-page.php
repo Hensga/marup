@@ -11,7 +11,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if ( ! is_front_page() ) : ?>
+			<div class="container text-center">
+				 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php marup_post_thumbnail(); ?>
