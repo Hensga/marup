@@ -11,9 +11,14 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function marup_customize_register( $wp_customize ) {
+	/**
+	 * Set transports for Customizer defaults
+	 */
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	
+	
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -31,6 +36,11 @@ function marup_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	/**
+ 	*  Add Customizer sections.
+ 	*/
+	require get_theme_file_path( 'inc/sections/customizer-footer.php' );
 }
 add_action( 'customize_register', 'marup_customize_register' );
 

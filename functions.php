@@ -211,3 +211,6 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 
 add_image_size( "logo", 100, 100 );
+
+
+

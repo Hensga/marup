@@ -13,6 +13,22 @@
 
 	</div><!-- #content -->
 
+	<?php
+	if ( ! is_404() && ! is_page_template( 'template-underconstruction.php' ) ) {
+		$colophon = get_theme_mod( 'footer_settings' );
+
+		$allowed_html = array(
+			'br'     => array(),
+			'strong' => array(),
+			'em'     => array(),
+			'a'      => array(
+				'alt'    => array(),
+				'href'   => array(),
+				'target' => array(),
+			),
+		);
+	}
+	?>
 	
 		<!-- Footer -->
 	<footer class="page-footer font-small mdb-color pt-4 container-fluid">
@@ -24,11 +40,13 @@
 			<div class="row text-center text-md-left mt-3 pb-3">
 
 				<!-- Grid column -->
-				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer_settings">
 				<h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-				<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-					consectetur
-					adipisicing elit.</p>
+				<?php if ( $colophon ) { ?>
+					<p class="colophon">
+						<?php echo wp_kses( $colophon, $allowed_html ); ?>
+					</p>
+				<?php } ?>
 				</div>
 				<!-- Grid column -->
 
@@ -36,7 +54,13 @@
 
 				<!-- Grid column -->
 				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-menu-first">
-				<h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+				<h6 class="text-uppercase mb-4 font-weight-bold"><?php
+					$locations = get_nav_menu_locations(); //get all menu locations
+					$menu = wp_get_nav_menu_object($locations['menu-3']);//get the menu object
+					
+					echo $menu->name; // name of the menu
+					;?>
+				</h6>
 					<?php
 								wp_nav_menu( array(
 									'theme_location' 	=> 'menu-3',
@@ -54,7 +78,13 @@
 
 				<!-- Grid column -->
 				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-				<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+				<h6 class="text-uppercase mb-4 font-weight-bold"><?php
+					$locations = get_nav_menu_locations(); //get all menu locations
+					$menu = wp_get_nav_menu_object($locations['menu-3']);//get the menu object
+					
+					echo $menu->name; // name of the menu
+					;?>
+				</h6>
 					<?php
 									wp_nav_menu( array(
 										'theme_location' 	=> 'menu-4',
