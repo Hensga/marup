@@ -41,7 +41,7 @@
 
 				<!-- Grid column -->
 				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer_settings">
-				<h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+				<h6 class="text-uppercase mb-4 font-weight-bold">About Faroe Islands</h6>
 				<?php if ( $colophon ) { ?>
 					<p class="colophon">
 						<?php echo wp_kses( $colophon, $allowed_html ); ?>
@@ -104,7 +104,7 @@
 				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
 				<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
 				<p>
-					<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+					<i class="fas fa-home mr-3"></i> Faroe Islands, Tórshavn</p>
 				<p>
 					<i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
 				<p>
@@ -145,22 +145,22 @@
 				<div class="text-center text-md-right">
 					<ul class="list-unstyled list-inline">
 					<li class="list-inline-item">
-						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://facebook.com" target="_blanc">
 						<i class="fab fa-facebook"></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
-						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com" target="_blanc">
 						<i class="fab fa-twitter"></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
-						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://google.com" target="_blanc">
 						<i class="fab fa-google-plus-g"></i>
 						</a>
 					</li>
 					<li class="list-inline-item">
-						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://linkedin.com" target="_blanc">
 						<i class="fab fa-linkedin-in"></i>
 						</a>
 					</li>
